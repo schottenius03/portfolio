@@ -8,6 +8,125 @@
     font-weight: 700;
 }
 
+/* Wrapper för split card with blue container */
+.contact-block {
+    display: flex;
+    flex-direction: column; 
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+    /* reduce block size */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    margin-top: 100px; /* move contct section further down */
+}
+
+/* social medias */
+.social-icon i {
+    font-size: 40px;       
+    color: black;        
+}
+
+@media (min-width: 768px) {
+    .contact-block {
+        flex-direction: row; 
+    }
+}
+
+/* Left column: Contact Info (blue) */
+.contact-info {
+    flex: 1;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    /* blå gradient */
+    background: linear-gradient(135deg, rgba(0,86,179,0.9), rgba(0,123,255,0.85));
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.info-item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.info-item strong {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
+    opacity: 0.95;
+}
+
+/* Right column: My socials */
+.connect-box {
+    background: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.connect-box h2 {
+    margin-bottom: 15px;
+}
+
+.connect-box p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.social-icon:hover {
+    background: rgba(0,123,255,0.1);
+}
+
 /* Footer */
 .footer {
     background-color: #f8f9fa;
