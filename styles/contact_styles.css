@@ -1,0 +1,19 @@
+/* Header */
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6; 
+}
+
+.brand span {
+    font-weight: 700;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    flex-shrink: 0;      
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #dee2e6;  
+}
