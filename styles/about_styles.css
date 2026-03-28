@@ -1,0 +1,37 @@
+/* Header */
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6; 
+}
+
+.brand span {
+    font-weight: 700;
+}
+
+/* Custom HR style */
+.custom-hr {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: 2px solid #ccc;
+}
+
+/* Education cards */
+.edu-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+    border-radius: 0.25rem;
+    background-color: #f8f9fa;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    flex-shrink: 0;      
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #dee2e6;  
+}

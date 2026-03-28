@@ -2,101 +2,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>About me</title>
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/about_styles.css">
-<body>
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-            <use xlink:href="#bootstrap"></use>
-        </svg>
-        <span class="fs-4">Kailing Schottenius</span>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Header -->
+    <header class="header d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                <use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Kailing Schottenius</span>
         </a>
         <ul class="nav nav-pills">
-        <li class="nav-item">
-            <a href="index.html" class="nav-link" aria-current="page">Home</a>
-        </li>
-        <li class="nav-item">
-            <a href="" class="nav-link active">About</a>
-        </li>
-        <li class="nav-item">
-            <a href="projects.html" class="nav-link">Projects</a>
-        </li>
-        <li class="nav-item">
-            <a href="contact.html" class="nav-link">Contact</a>
-        </li>
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
     </header>
 
-    <!-- About me -->
+    <!-- About Me Section -->
     <section class="about py-5">
-    <div class="container">
-        <div class="row align-items-center">
-        <!-- Picture -->
-        <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
-            <img src="images/kailing-interests.png" alt="Kailing's hobbies" class="img-fluid rounded">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Picture -->
+                <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
+                    <img src="images/kailing-interests.png" alt="Kailing's hobbies" class="img-fluid rounded">
+                </div>
+                <div class="col-md-7 ps-md-5">
+                    <h2>About Me</h2>
+                    <p>
+                    I’m a tech enthusiast from Sweden, passionate about creating applications and websites from scratch. Growing up, I explored programming and media technology, which sparked my love for problem-solving and innovation.
+                    </p>
+                    <p>
+                    To further pursue my interests, I moved to Sydney to continue my studies and expand my skills. Here, I enjoy experimenting with new tools and approaches, applying creativity and curiosity to every project I work on.
+                    </p>
+                    <p>
+                    Outside of technology, I enjoy handcrafts such as embroidery, knitting, and crocheting. These hobbies keep my creativity flowing and inspire fresh perspectives in my coding projects, helping me approach challenges with patience and focus.
+                    </p>
+                    <p>
+                    I am driven by curiosity, dedication, and a desire to learn. My goal is to combine technical skill with creativity to build meaningful, functional, and thoughtful experiences.
+                    </p>
+                    <a href="#" class="btn btn-primary mt-2">Download my CV</a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-7 ps-md-5">
-            <h2>About Me</h2>
-            <p>
-            I’m a tech enthusiast from Sweden, passionate about creating applications and websites from scratch. Growing up, I explored programming and media technology, which sparked my love for problem-solving and innovation.
-            </p>
-            <p>
-            To further pursue my interests, I moved to Sydney to continue my studies and expand my skills. Here, I enjoy experimenting with new tools and approaches, applying creativity and curiosity to every project I work on.
-            </p>
-            <p>
-            Outside of technology, I enjoy handcrafts such as embroidery, knitting, and crocheting. These hobbies keep my creativity flowing and inspire fresh perspectives in my coding projects, helping me approach challenges with patience and focus.
-            </p>
-            <p>
-            I am driven by curiosity, dedication, and a desire to learn. My goal is to combine technical skill with creativity to build meaningful, functional, and thoughtful experiences.
-            </p>
-            <a href="" class="btn btn-primary mt-2">Download my CV</a>
-        </div>
-        </div>
-    </div>
     </section>
 
-    <hr class="mx-5 my-4" style="border-top: 2px solid #ccc;">
+    <hr class="custom-hr">
 
     <!-- Education & Certifications Section -->
     <section class="education py-5">
-    <div class="container">
-        <h2 class="mb-4">Education & Certifications</h2>
+        <div class="container">
+            <h2 class="mb-4">Education & Certifications</h2>
 
-        <!-- Bachelor -->
-        <div class="row align-items-center mb-3 p-3 shadow-sm rounded bg-light">
-        <div class="col-auto text-center">
-            <span style="font-size:2rem;">🎓</span>
-        </div>
-        <div class="col">
-            <h5>Bachelor in Mobile App Development</h5>
-            <p class="mb-0">Academy of Interactive Technology, Sydney, Australia – 2023 – Present</p>
-            <small>Specializing in mobile app development and web design projects.</small><br>
-            <small><strong>Expected Graduation:</strong> August 2026</small>
-        </div>
-        </div>
+            <!-- Bachelor -->
+            <div class="edu-card row align-items-center mb-3 p-3 shadow-sm rounded">
+                <div class="col-auto text-center">
+                    <span class="edu-icon">🎓</span>
+                </div>
+                <div class="col">
+                    <h5>Bachelor in Mobile App Development</h5>
+                    <p class="mb-0">Academy of Interactive Technology, Sydney, Australia – 2023 – Present</p>
+                    <small>Specializing in mobile app development and web design projects.</small><br>
+                    <small><strong>Expected Graduation:</strong> August 2026</small>
+                </div>
+            </div>
 
-        <!-- Higher Education Diploma -->
-        <div class="row align-items-center mb-3 p-3 shadow-sm rounded bg-light">
-        <div class="col-auto text-center">
-            <span style="font-size:2rem;">🎓</span>
+            <!-- Higher Education Diploma -->
+            <div class="edu-card row align-items-center mb-3 p-3 shadow-sm rounded bg-light">
+                <div class="col-auto text-center">
+                    <span class="edu-icon">🎓</span>
+                </div>
+                <div class="col">
+                    <h5>Higher Education Diploma in Information & Media Technology</h5>
+                    <p class="mb-0">Nacka Gymnasium, Stockholm, Sweden – 2023</p>
+                    <small>Studied programming fundamentals and media technology.</small>
+                </div>
+            </div>
         </div>
-        <div class="col">
-            <h5>Higher Education Diploma in Information & Media Technology</h5>
-            <p class="mb-0">Nacka Gymnasium, Stockholm, Sweden – 2023</p>
-            <small>Studied programming fundamentals and media technology.</small>
-        </div>
-        </div>
-    </div>
     </section>
 
-    <!-- Tech Stack -->
+    <hr class="custom-hr">
 
-    <section class="tech-stack py-5 bg-light">
+    <!-- Tech Stack Section -->
+    <section class="tech-stack py-5">
         <div class="container">
             <h2 class="mb-5 text-center">Tech Stack</h2>
             <div class="row g-4 justify-content-center">
@@ -130,29 +129,29 @@
                 <!-- Mobile -->
                 <div class="col-12 col-md-2">
                     <div class="card h-100 shadow-sm text-center p-3">
-                    <h6 class="mb-3"><i class="fas fa-mobile-alt me-1"></i>Mobile Dev</h6>
-                    <p class="mb-1"><i class="fab fa-android me-1"></i>Kotlin</p>
-                    <p class="mb-1"><i class="fab fa-react me-1"></i>React Native</p>
-                    <p class="mb-1"><i class="fab fa-apple me-1"></i>Swift</p>
+                        <h6 class="mb-3"><i class="fas fa-mobile-alt me-1"></i>Mobile Dev</h6>
+                        <p class="mb-1"><i class="fab fa-android me-1"></i>Kotlin</p>
+                        <p class="mb-1"><i class="fab fa-react me-1"></i>React Native</p>
+                        <p class="mb-1"><i class="fab fa-apple me-1"></i>Swift</p>
                     </div>
                 </div>
 
                 <!-- DevOps -->
                 <div class="col-12 col-md-2">
                     <div class="card h-100 shadow-sm text-center p-3">
-                    <h6 class="mb-3"><i class="fas fa-tools me-1"></i>DevOps</h6>
-                    <p class="mb-1"><i class="fab fa-git-alt me-1"></i>Git</p>
-                    <p class="mb-1"><i class="fab fa-github me-1"></i>GitHub</p>
+                        <h6 class="mb-3"><i class="fas fa-tools me-1"></i>DevOps</h6>
+                        <p class="mb-1"><i class="fab fa-git-alt me-1"></i>Git</p>
+                        <p class="mb-1"><i class="fab fa-github me-1"></i>GitHub</p>
                     </div>
                 </div>
 
                 <!-- Other -->
                 <div class="col-12 col-md-2">
                     <div class="card h-100 shadow-sm text-center p-3">
-                    <h6 class="mb-3"><i class="fas fa-paint-brush me-1"></i>Other</h6>
-                    <p class="mb-1"><i class="fas fa-pencil-ruler me-1"></i>Canva</p>
-                    <p class="mb-1"><i class="fab fa-figma me-1"></i>Figma</p>
-                    <p class="mb-1"><i class="fab fa-trello me-1"></i>Trello</p>
+                        <h6 class="mb-3"><i class="fas fa-paint-brush me-1"></i>Other</h6>
+                        <p class="mb-1"><i class="fas fa-pencil-ruler me-1"></i>Canva</p>
+                        <p class="mb-1"><i class="fab fa-figma me-1"></i>Figma</p>
+                        <p class="mb-1"><i class="fab fa-trello me-1"></i>Trello</p>
                     </div>
                 </div>
 
@@ -160,22 +159,9 @@
         </div>
     </section>
 
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item">
-            <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
-            </li>
-            <li class="nav-item">
-            <a href="" class="nav-link px-2 text-body-secondary">About</a>
-            </li>
-            <li class="nav-item">
-            <a href="projects.html" class="nav-link px-2 text-body-secondary">Projects</a>
-            </li>
-            <li class="nav-item">
-            <a href="contact.html" class="nav-link px-2 text-body-secondary">Contact</a>
-            </li>
-        </ul>
-        <p class="text-center text-body-secondary">© 2026</p>
+    <!-- Footer -->
+    <footer class="footer mt-auto text-center text-secondary">
+        © 2026
     </footer>
 
     <!-- Bootstrap -->
