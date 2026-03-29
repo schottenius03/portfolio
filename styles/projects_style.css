@@ -1,3 +1,7 @@
+body {
+    background-color: #eaf1fa;
+}
+
 /* Header */
 .header {
     background-color: #fff;
@@ -87,16 +91,21 @@
     color: #6c757d;
 }
 
+.github-icon i {
+    color: #000; 
+    transition: color 0.2s;
+}
+
+.github-icon i:hover {
+    color: #555; 
+}
+
 /* Footer */
 .footer {
-    background-color: #f8f9fa;
-    color: #6c757d;
+    background-color: #212529; 
+    color: white; 
     flex-shrink: 0;      
     text-align: center;
     padding: 1rem 0;
     border-top: 1px solid #dee2e6;  
-}
-
-body {
-    background-color: #eaf1fa;
 }
