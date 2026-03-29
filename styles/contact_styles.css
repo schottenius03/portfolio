@@ -22,7 +22,7 @@
 }
 
 .contact-container {
-    margin-top: 100px; /* move contct section further down */
+    margin-top: 100px; /* move contact section further down */
 }
 
 /* social medias */
@@ -129,8 +129,8 @@
 
 /* Footer */
 .footer {
-    background-color: #f8f9fa;
-    color: #6c757d;
+    background-color: #212529; 
+    color: white; 
     flex-shrink: 0;      
     text-align: center;
     padding: 1rem 0;
