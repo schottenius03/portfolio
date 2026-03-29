@@ -58,6 +58,10 @@ body {
     margin-bottom: 1rem;
 }
 
+h5 {
+    color: black;
+}
+
 /* Tech Bubbles */
 .tech-bubbles {
     margin-top: 0.5rem;
