@@ -1,7 +1,11 @@
 /* Header */
 .header {
     background-color: #fff;
-    border-bottom: 1px solid #dee2e6; 
+    border-bottom: 1px solid #dee2e6;
+}
+
+.about {
+    margin: 0px 15px 0px 15px; 
 }
 
 .brand span {
@@ -24,6 +28,12 @@
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     border-radius: 0.25rem;
     background-color: #f8f9fa;
+}
+
+/* Tech Stack cards bakgrund */
+.tech-stack .card {
+    background-color: #f8f9fa; 
+    border-radius: 0.25rem;    
 }
 
 /* Footer */
