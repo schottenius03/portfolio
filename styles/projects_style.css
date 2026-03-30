@@ -51,6 +51,12 @@ body {
     object-fit: cover;
 }
 
+.hangman-img {
+    object-fit: cover;    
+    object-position: left;  
+    height: 200px;         
+}
+
 /* Card Text */
 .card-text {
     font-size: 0.95rem;
