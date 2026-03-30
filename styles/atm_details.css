@@ -1,0 +1,102 @@
+/* Header */
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.brand span {
+    font-weight: 700;
+}
+
+/* Page background */
+.page-bg {
+    background-color: #f8f9fa;
+}
+
+/* Back link */
+.back-link {
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Project Overview */
+.project-overview {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+}
+
+/* Feature cards */
+.feature-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0.15rem 0.3rem rgba(0,0,0,0.05);
+    transition: all 0.2s;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.feature-card:hover {
+    box-shadow: 0 0.3rem 0.6rem rgba(0,0,0,0.12);
+}
+
+/* Feature checkmark */
+.feature-bock {
+    color: #6fcf97;
+    font-size: 1.2rem;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* Technologies Used */
+.tech-used {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Github card */
+.github-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0,0,0,0.1);
+}
+
+.github-card a.github-link {
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.github-card a.github-link .repo-text:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+.list-unstyled {
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #212529;
+    color: #fff;
+    flex-shrink: 0;      
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #dee2e6;  
+}
