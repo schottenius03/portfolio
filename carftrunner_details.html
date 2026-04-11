@@ -7,6 +7,8 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Custom CSS -->
@@ -45,13 +47,32 @@
         <div class="project-overview p-4 rounded shadow-sm">
           <h2 class="fw-bold mb-3">Overview</h2>
           <p>
-            CraftRunner is an Android app that helps hobby enthusiasts keep track of craft supply prices.
-            With a simple, user-friendly interface and Firebase login for secure access, the app lets you quickly browse a curated list of items. 
-            It’s designed to make comparing supplies effortless, helping you plan your next project with ease and stay inspired.
+            A native Android game application developed to explore the Android SDK and mobile-specific logic. 
+            Built using Java and XML for layout design, the project focuses on real-time event handling and the application lifecycle. 
+            By leveraging the Gradle build system, I ensured a structured development workflow while implementing a functional prototype that demonstrates core Android engineering principles.
           </p>
 
-          <!-- Project Image -->
-          <img src="images/craftrunner-screens-1.png" class="img-fluid my-3 rounded" alt="Project Screenshot">
+          <!-- Slideshow / Carousel -->
+        <div id="portfolioCarousel" class="carousel slide my-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="images/craftrunner1.png" class="d-block w-100 rounded" alt="Project Screenshot 1">
+            </div>
+            <div class="carousel-item">
+            <img src="images/craftrunner2.png" class="d-block w-100 rounded" alt="Project Screenshot 2">
+            </div>
+        </div>
+
+        <!-- Arrows right left -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
 
           <!-- Key Features -->
           <div class="row g-3 mt-3 equal-height-features">
@@ -59,8 +80,8 @@
               <div class="feature-card d-flex p-3 rounded mb-2">
                 <i class="fas fa-check feature-bock"></i>
                 <div>
-                  <h5 class="mb-1">Quick Price Overview</h5>
-                  <p class="mb-0">See all craft supply prices at a glance, so you can make fast and informed decisions.</p>
+                  <h5 class="mb-1">Real-Time Logic</h5>
+                  <p class="mb-0">Smooth event handling and game-state management in a native Java environment.</p>
                 </div>
               </div>
             </div>
@@ -68,8 +89,8 @@
               <div class="feature-card d-flex p-3 rounded mb-2">
                 <i class="fas fa-check feature-bock"></i>
                 <div>
-                  <h5 class="mb-1">Secure Login</h5>
-                  <p class="mb-0">Sign in with Firebase for a simple and safe way to keep your app experience personal.</p>
+                  <h5 class="mb-1">Dynamic UI</h5>
+                  <p class="mb-0">Responsive layouts built with XML to adapt to different screen densities.</p>
                 </div>
               </div>
             </div>
@@ -77,8 +98,8 @@
               <div class="feature-card d-flex p-3 rounded mb-2">
                 <i class="fas fa-check feature-bock"></i>
                 <div>
-                  <h5 class="mb-1">Easy Browsing</h5>
-                  <p class="mb-0">Navigate through a curated list of items effortlessly, making it easy to find what you need for your next project.</p>
+                  <h5 class="mb-1">Lifecycle Management</h5>
+                  <p class="mb-0">Efficient resource handling to maintain performance during active gameplay.</p>
                 </div>
               </div>
             </div>
@@ -87,9 +108,11 @@
           <!-- Takeaways -->
           <div class="mt-4">
             <h4>Takeaways</h4>
-            <p>Building CraftRunner gave me my first hands-on experience with Android development in Java. 
-                I learned how to structure an app, manage user login with Firebase, and present information in a clean, user-friendly interface. 
-                Even as a beginner, I gained practical insight into app design, navigation, and creating a polished, functional Android app from start to finish.</p>
+            <p>
+              Developing CraftRunner provided practical insights into the Android Activity Lifecycle and native resource management. 
+              The core challenge was synchronizing real-time game logic with responsive UI updates—an exercise that strengthened my ability to build well-structured solutions in Java. 
+              This project gave me hands-on experience in navigating the Android SDK and understanding the engineering principles required to maintain a stable and engaging mobile experience.
+            </p>
           </div>
         </div>
       </div>
@@ -100,9 +123,10 @@
         <div class="tech-used p-4 rounded shadow-sm mb-3">
           <h5 class="mb-3">Technologies Used</h5>
           <ul class="list-unstyled">
-            <li class="tech-item mb-2"><i class="fas fa-cogs fa-lg text-purple me-2"></i>Gradle</li>
-                <li class="tech-item mb-2"><i class="fab fa-java fa-lg text-red me-2"></i>Java</li>
-                <li class="tech-item mb-2"><i class="fas fa-code fa-lg text-blue me-2"></i>XML</li>
+              <li class="tech-item mb-2"><i class="fab fa-java fa-lg text-danger me-2"></i>Java (Android Framework)</li>
+              <li class="tech-item mb-2"><i class="fas fa-file-code fa-lg text-primary me-2"></i>XML UI Design</li>
+              <li class="tech-item mb-2"><i class="fas fa-tools fa-lg text-secondary me-2"></i>Gradle Build System</li>
+              <li class="tech-item mb-2"><i class="fas fa-sync fa-lg text-success me-2"></i>Activity Lifecycle Management</li>
           </ul>
         </div>
 
