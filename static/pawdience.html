@@ -3,36 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Just  Sec – Project Detail</title>
+  <title>Simple Website – Project Details</title>
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="styles/just_a_sec_details_styles.css">
+  <link rel="stylesheet" href="../styles/pawdience_details_styles.css">
 </head>
 <body class="d-flex flex-column min-vh-100 page-bg">
 
   <!-- Header -->
   <header class="header d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/" class="brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+      <a href="../index.html" class="brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
           <svg class="bi me-2" width="40" height="32" aria-hidden="true">
               <use xlink:href="#bootstrap"></use>
           </svg>
           <span class="fs-4">Kailing Schottenius</span>
       </a>
       <ul class="nav nav-pills">
-          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
-          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="../projects.html" class="nav-link active">Projects</a></li>
+          <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
       </ul>
   </header>
 
   <!-- Back link -->
   <div class="container mb-4">
-      <a href="projects.html" class="text-dark fw-bold back-link">
+      <a href="../projects.html" class="text-dark fw-bold back-link">
         <i class="fas fa-arrow-left me-2"></i>Back to Projects
       </a>
   </div>
@@ -45,12 +45,13 @@
         <div class="project-overview p-4 rounded shadow-sm">
           <h2 class="fw-bold mb-3">Overview</h2>
           <p>
-            A productivity-focused iOS application designed to combat digital distractions through intentional friction. 
-            Built with Swift and the Cocoa Touch framework, the app implements a mandatory delay mechanism to encourage mindful device usage and better habit formation.
+            A responsive web application developed to showcase modern front-end standards and user-centric design. 
+            Built using HTML5 and CSS3, Pawdience follows a structured development lifecycle—moving from a comprehensive design document to a multi-page functional prototype. 
+            The project emphasizes clean semantic markup, responsive layouts, and a consistent visual identity across different screen sizes.
           </p>
 
           <!-- Project Image -->
-          <img src="images/clock.png" class="img-fluid my-3 rounded" alt="Project Screenshot">
+          <img src="../images/pawdience.png" class="img-fluid my-3 rounded" alt="Project Screenshot">
 
           <!-- Key Features -->
           <div class="row g-3 mt-3 equal-height-features">
@@ -58,8 +59,8 @@
               <div class="feature-card d-flex p-3 rounded mb-2">
                 <i class="fas fa-check feature-bock"></i>
                 <div>
-                  <h5 class="mb-1">Intentional Friction</h5>
-                  <p class="mb-0">A mandatory 5-minute snooze to prevent impulsive device usage.</p>
+                  <h5 class="mb-1">Adaptive Layouts</h5>
+                  <p class="mb-0">>Implementation of flexible grid systems to ensure a seamless experience across desktop and tablet screens.</p>
                 </div>
               </div>
             </div>
@@ -67,8 +68,8 @@
               <div class="feature-card d-flex p-3 rounded mb-2">
                 <i class="fas fa-check feature-bock"></i>
                 <div>
-                  <h5 class="mb-1">State Persistence</h5>
-                  <p class="mb-0">Robust handling of the app lifecycle to ensure focus sessions aren't interrupted.</p>
+                  <h5 class="mb-1">Semantic Structure</h5>
+                  <p class="mb-0">Clean, well-organized HTML5 for improved accessibility and search engine visibility.</p>
                 </div>
               </div>
             </div>
@@ -76,8 +77,8 @@
               <div class="feature-card d-flex p-3 rounded mb-2">
                 <i class="fas fa-check feature-bock"></i>
                 <div>
-                  <h5 class="mb-1">Human Interface Design</h5>
-                  <p class="mb-0">A clean, minimal UI focused on reducing digital anxiety.</p>
+                  <h5 class="mb-1">Design-to-Code Synergy</h5>
+                  <p class="mb-0">A professional transition from a conceptual design document to a fully functional multi-page prototype.</p>
                 </div>
               </div>
             </div>
@@ -87,10 +88,9 @@
           <div class="mt-4">
             <h4>Takeaways</h4>
             <p>
-              Developing Just A Sec was a deep dive into the iOS ecosystem and the power of the MVC pattern. 
-              I focused on creating a seamless user experience while managing complex data persistence with CoreData. 
-              The project taught me how to handle the application lifecycle effectively, ensuring that the app remains reliable and performant even when running in the background. 
-              It also solidified my understanding of Human Interface Guidelines and how small design choices can significantly impact user behavior.
+              Developing Pawdience was an exercise in bridging the gap between a conceptual design document and a live functional website. 
+              I prioritized semantic markup to ensure accessibility and better structure, while using CSS3 to create a fully adaptive experience. 
+              The process taught me the importance of the planning phase, ensuring that every graphic and content element served a specific requirement and contributed to a professional and reliable interface.
             </p>
           </div>
         </div>
@@ -102,16 +102,16 @@
         <div class="tech-used p-4 rounded shadow-sm mb-3">
           <h5 class="mb-3">Technologies Used</h5>
           <ul class="list-unstyled">
-              <li class="tech-item mb-2"><i class="fab fa-swift fa-lg text-orange me-2"></i>Swift</li>
-              <li class="tech-item mb-2"><i class="fas fa-cubes fa-lg text-info me-2"></i>UIKit & Cocoa Touch</li>
-              <li class="tech-item mb-2"><i class="fas fa-sitemap fa-lg text-primary me-2"></i>MVC Architecture</li>
-              <li class="tech-item mb-2"><i class="fas fa-database fa-lg text-secondary me-2"></i>Core Data</li>
+              <li class="tech-item mb-2"><i class="fab fa-html5 fa-lg text-danger me-2"></i>Semantic HTML5</li>
+              <li class="tech-item mb-2"><i class="fab fa-css3-alt fa-lg text-primary me-2"></i>Advanced CSS3 Styling</li>
+              <li class="tech-item mb-2"><i class="fas fa-desktop fa-lg text-info me-2"></i>Responsive Web Design</li>
+              <li class="tech-item mb-2"><i class="fas fa-file-alt fa-lg text-secondary me-2"></i>Design Documentation & Planning</li>
           </ul>
         </div>
 
         <!-- Github -->
         <div class="github-card p-4 rounded shadow-sm">
-          <a href="https://github.com/schottenius03/just-a-sec" target="_blank" class="d-flex align-items-center text-dark fw-bold github-link">
+          <a href="https://github.com/schottenius03/pawdience" target="_blank" class="d-flex align-items-center text-dark fw-bold github-link">
             <i class="fab fa-github fa-2x me-2"></i><span class="repo-text">View Repository</span>
           </a>
         </div>
