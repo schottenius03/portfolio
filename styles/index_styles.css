@@ -1,66 +1,10 @@
-/* colour palette */
-:root {
-  --bg-dark-blue: #0b0f19;      
-  --bg-card-blue: #151b2c;      
-  --text-main: #f3f4f6;         
-  --text-muted: #9ca3af;        
-  --accent-cyan: #00f2fe;       
-  --accent-blue: #0072ff;       
-  --border-color: #222d4a;      
-}
-
-/* base styles */
+/* coordinate anchors for cursor targeting tracking */
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: var(--bg-dark-blue);
-  color: var(--text-main);
-  position: relative;
-  overflow: hidden;
   --target-x: 50vw;
   --target-y: 50vh;
 }
 
-/* header */
-.header {
-  background-color: var(--bg-card-blue);
-  border-bottom: 1px solid var(--border-color) !important;
-  flex-shrink: 0;
-  transition: opacity 0.4s ease;
-}
-
-.brand span {
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--accent-cyan) 20%, #3a7bd5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.brand:hover span {
-  filter: brightness(1.2);
-  transition: all 0.2s ease;
-}
-
-/* nav links styling */
-.nav-link {
-  color: var(--text-muted) !important;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.nav-link:hover {
-  color: var(--accent-cyan) !important;
-}
-
-.nav-pills .nav-link.active {
-  background: linear-gradient(135deg, var(--accent-blue), #00c6ff) !important;
-  color: #fff !important;
-  box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
-}
-
-/* hero section */
+/* full viewport landing layout alignment dimensions */
 .hero-section {
   display: flex;
   align-items: center;    
@@ -73,7 +17,7 @@ html, body {
   overflow: hidden;
 }
 
-/* hero text */
+/* main text element formatting boundaries */
 .hero-text {
   transition: opacity 0.4s ease;
   z-index: 2;
@@ -88,13 +32,14 @@ html, body {
   color: var(--text-muted);
 }
 
-/* primary and outline buttons */
+/* action trigger elements standard configurations */
 .btn-primary {
   background: linear-gradient(135deg, var(--accent-blue), #00c6ff);
   border: none;
   color: #fff;
   box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3);
   transition: all 0.3s ease;
+  border-radius: 50px !important;
 }
 
 .btn-primary:hover {
@@ -107,6 +52,7 @@ html, body {
   color: var(--accent-cyan);
   background: transparent;
   transition: all 0.3s ease;
+  border-radius: 50px !important;
 }
 
 .btn-outline-primary:hover {
@@ -116,13 +62,13 @@ html, body {
   transform: translateY(-2px);
 }
 
-/* image container layout */
+/* tracking layout bounding wrappers */
 .hero-image-wrapper {
   position: relative;
   display: inline-block;
 }
 
-/* hero image static layout */
+/* main static avatar geometry values */
 .hero-image img {
   max-width: 300px;
   border-radius: 50%;
@@ -137,20 +83,20 @@ html, body {
   transform: scale(1.03);
 }
 
-/* Tonar ner avataren och dess ram när strålkastarsvepet drar igång */
+/* dim profile visibility rules during vehicle searching phase */
 body.spotlight-active .hero-image img {
   border-color: rgba(0, 242, 254, 0.15);
   filter: contrast(0.7) brightness(0.4);
 }
 
-/* Tänder upp avataren till full styrka direkt när strålkastaren landar */
+/* snap rendering values back onto target lock illumination state */
 body.spotlight-expand .hero-image img {
   border-color: var(--accent-cyan);
   filter: contrast(1) brightness(1);
   transition: border-color 0.2s ease, filter 0.2s ease;
 }
 
-/* hand drawn pointer elements without boundaries or forced casing */
+/* interactive text bubble elements indicator setups */
 .badge-pointer {
   position: absolute;
   top: -30px;
@@ -164,7 +110,6 @@ body.spotlight-expand .hero-image img {
   transition: opacity 0.3s ease;
 }
 
-/* clean text styling without bounds box */
 .badge-text {
   font-family: monospace;
   font-size: 1.05rem;
@@ -179,16 +124,14 @@ body.spotlight-expand .hero-image img {
   filter: drop-shadow(0 0 5px rgba(0, 242, 254, 0.4));
 }
 
-/* arrow svg container properties */
 .arrow-svg {
   width: 50px;
   height: 50px;
   margin-top: 5px;
-  transform: rotate(-10deg);
+  transform: rotate(310deg);
   filter: drop-shadow(0 0 5px rgba(0, 242, 254, 0.6));
 }
 
-/* glow breathing mechanism keyframe path */
 @keyframes pulseGlow {
   0%, 100% {
     opacity: 0.5;
@@ -201,18 +144,16 @@ body.spotlight-expand .hero-image img {
   }
 }
 
-/* halts the pulse animation track on interaction activation */
 .badge-pointer.spotlight-active {
   animation: none !important;
 }
 
-/* removes badge elements from display once action phase begins */
 body.spotlight-active .badge-pointer,
 body.spotlight-expand .badge-pointer {
   opacity: 0;
 }
 
-/* cinematic action flashlight overlay mask layer */
+/* fullscreen dimmer canvas properties configuration */
 .spotlight-overlay {
   position: fixed;
   top: 0;
@@ -225,7 +166,6 @@ body.spotlight-expand .badge-pointer {
   display: none;
 }
 
-/* main floating flashlight cone using original solid cyan illumination profiles */
 .spotlight-overlay::before {
   content: '';
   position: absolute;
@@ -238,7 +178,7 @@ body.spotlight-expand .badge-pointer {
   left: 0;
 }
 
-/* dynamic repeating ring layout specification blueprints */
+/* persistent expanding waveform element styling profile templates */
 .shockwave-ring {
   position: absolute;
   border-radius: 50%;
@@ -261,7 +201,6 @@ body.spotlight-active .spotlight-overlay::before {
   animation: smoothVehicleSweep 5.5s ease-in-out forwards;
 }
 
-/* non linear organic searching tracking path simulation */
 @keyframes smoothVehicleSweep {
   0% { left: -5vw; top: 30vh; }
   18% { left: 120px; top: 68vh; }
@@ -272,7 +211,6 @@ body.spotlight-active .spotlight-overlay::before {
   100% { left: var(--target-x); top: var(--target-y); }
 }
 
-/* terminal lock target bubble expansion values returning to original cyan overlay profile */
 body.spotlight-expand .spotlight-overlay {
   display: block;
 }
@@ -286,7 +224,6 @@ body.spotlight-expand .spotlight-overlay::before {
   transition: width 0.4s ease-out, height 0.4s ease-out;
 }
 
-/* animation track for expanding exactly to the boundaries of the spotlight border */
 @keyframes continuousShockwave {
   0% {
     width: 0px;
@@ -301,27 +238,4 @@ body.spotlight-expand .spotlight-overlay::before {
     height: 340px;
     opacity: 0;
   }
-}
-
-/* footer layout */
-.footer {
-  background-color: var(--bg-card-blue); 
-  color: var(--text-muted); 
-  flex-shrink: 0;      
-  text-align: center;
-  padding: 1rem 0;
-  border-top: 1px solid var(--border-color);  
-}
-
-/* ambient layer layout */
-body::before {
-  content: "";
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 120%;
-  height: 120%;
-  background: radial-gradient(circle at 50% 50%, rgba(0, 242, 254, 0.04), transparent 60%);
-  pointer-events: none;
-  z-index: -2;
 }
