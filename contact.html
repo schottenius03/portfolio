@@ -3,89 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- CDN for icons -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>Contact me</title>
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/contact_styles.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <!-- Header -->
-    <header class="header d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="index.html" class="brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Kailing Schottenius</span>
-        </a>
+
+    <div id="spotlightOverlay" class="spotlight-overlay"></div>
+
+    <header class="header p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="brand text-decoration-none text-white fs-4"><span>Kailing Schottenius</span></a>
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
         </ul>
+        </div>
     </header>
 
     <div class="contact-container container">
         <div class="contact-block">
 
-            <!-- Left column: Contact Info -->
-            <div class="contact-info">
-                <h2>Contact Info</h2>
-
-                <div class="info-item">
-                    <span class="icon">✉️</span> 
-                    <strong>Email: </strong>
-                    <p>kailing.schottenius@gmail.com</p>
-                </div>
-
-                <div class="info-item">
-                    <span class="icon">📍</span>
-                    <strong>Location: </strong>
-                    <p>Sydney, Australia (open to relocation)</p>
-                </div>
-
-                <div class="info-item">
-                    <span class="icon">🌍</span>
-                    <strong>Availability: </strong>
-                    <p>Available for remote work worldwide</p>
-                </div>
-
-                <div class="info-item">
-                    <span class="icon">⏱</span> 
-                    <strong>Response time: </strong>
-                    <p>Usually within 24 hours</p>
-                </div>
+            <div class="profile-avatar-container">
+                <img src="https://github.com/schottenius03.png" alt="Kailing Schottenius" class="profile-avatar">
             </div>
 
-            <!-- Right column: Connect with me -->
-            <div class="connect-box">
-                <h2>You can also find me on socials</h2>
-                <p>Feel free to reach out via email or follow me on social media.</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/flufflingon" target="_blank" class="social-icon">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-                    <a href="https://github.com/schottenius03" target="_blank" class="social-icon">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kailing-schottenius/" target="_blank" class="social-icon">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
+            <div class="contact-grid-content">
+                
+                <div class="contact-info">
+                    <h2>Contact Info</h2>
+
+                    <div class="info-item">
+                        <span class="icon">✉️</span> 
+                        <div class="info-text">
+                            <span class="info-label">EMAIL</span>
+                            <p>kailing.schottenius@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div class="info-text">
+                            <span class="info-label">LOCATION</span>
+                            <p>Sydney, Australia (Open to relocation)</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="icon">🌍</span>
+                        <div class="info-text">
+                            <span class="info-label">AVAILABILITY</span>
+                            <p>Available for remote work worldwide</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="icon">⏱</span> 
+                        <div class="info-text">
+                            <span class="info-label">RESPONSE TIME</span>
+                            <p>Usually within 24 hours</p>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="connect-box">
+                    <h3>You can also find me on socials</h3>
+                    <p>Feel free to reach out via email or follow me on social media to see my latest work and updates.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/flufflingon" target="_blank" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://github.com/schottenius03" target="_blank" class="social-icon">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kailing-schottenius/" target="_blank" class="social-icon">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer mt-auto text-center py-3 border-top">
-        © 2026
+    <footer class="footer">
+        <div class="container">
+        <p class="mb-0">&copy; 2026</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
