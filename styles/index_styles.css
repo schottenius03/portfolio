@@ -1,10 +1,17 @@
-/* coordinate anchors for cursor targeting tracking */
+/* Local viewport height lock to prevent double scrollbars on the landing page */
+html, body {
+  height: 100vh !important;
+  min-height: 100vh !important;
+  overflow: hidden !important;
+}
+
+/* Coordinate anchors for cursor targeting tracking */
 html, body {
   --target-x: 50vw;
   --target-y: 50vh;
 }
 
-/* full viewport landing layout alignment dimensions */
+/* Full viewport landing layout alignment dimensions */
 .hero-section {
   display: flex;
   align-items: center;    
@@ -12,12 +19,12 @@ html, body {
   padding: 20px;
   background-color: transparent; 
   color: var(--text-main);
-  height: calc(100vh - 120px);
+  height: calc(100vh - 72px);
   position: relative;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
-/* main text element formatting boundaries */
+/* Main text element formatting boundaries */
 .hero-text {
   transition: opacity 0.4s ease;
   z-index: 2;
@@ -32,7 +39,7 @@ html, body {
   color: var(--text-muted);
 }
 
-/* action trigger elements standard configurations */
+/* Action trigger elements standard configurations */
 .btn-primary {
   background: linear-gradient(135deg, var(--accent-blue), #00c6ff);
   border: none;
@@ -62,13 +69,13 @@ html, body {
   transform: translateY(-2px);
 }
 
-/* tracking layout bounding wrappers */
+/* Tracking layout bounding wrappers */
 .hero-image-wrapper {
   position: relative;
   display: inline-block;
 }
 
-/* main static avatar geometry values */
+/* Main static avatar geometry values */
 .hero-image img {
   max-width: 300px;
   border-radius: 50%;
@@ -83,20 +90,20 @@ html, body {
   transform: scale(1.03);
 }
 
-/* dim profile visibility rules during vehicle searching phase */
+/* Dim profile visibility rules during vehicle searching phase */
 body.spotlight-active .hero-image img {
   border-color: rgba(0, 242, 254, 0.15);
   filter: contrast(0.7) brightness(0.4);
 }
 
-/* snap rendering values back onto target lock illumination state */
+/* Snap rendering values back onto target lock illumination state */
 body.spotlight-expand .hero-image img {
   border-color: var(--accent-cyan);
   filter: contrast(1) brightness(1);
   transition: border-color 0.2s ease, filter 0.2s ease;
 }
 
-/* interactive text bubble elements indicator setups */
+/* Interactive text bubble elements indicator setups */
 .badge-pointer {
   position: absolute;
   top: -30px;
@@ -153,7 +160,7 @@ body.spotlight-expand .badge-pointer {
   opacity: 0;
 }
 
-/* fullscreen dimmer canvas properties configuration */
+/* Fullscreen dimmer canvas properties configuration */
 .spotlight-overlay {
   position: fixed;
   top: 0;
@@ -178,7 +185,7 @@ body.spotlight-expand .badge-pointer {
   left: 0;
 }
 
-/* persistent expanding waveform element styling profile templates */
+/* Persistent expanding waveform element styling profile templates */
 .shockwave-ring {
   position: absolute;
   border-radius: 50%;

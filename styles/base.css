@@ -8,18 +8,17 @@
   --border-color: #222d4a;      
 }
 
-/* global resets for uniform layout across all subpages */
+/* Global resets for uniform layout across all subpages */
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: var(--bg-dark-blue);
   color: var(--text-main);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-/* persistent header global styles */
+/* Persistent header global styles */
 .header {
   background-color: var(--bg-card-blue);
   border-bottom: 1px solid var(--border-color) !important;
@@ -56,7 +55,7 @@ html, body {
   box-shadow: 0 0 15px rgba(0, 242, 254, 0.4);
 }
 
-/* persistent footer global styles */
+/* Persistent footer global styles */
 .footer {
   background-color: var(--bg-card-blue); 
   color: var(--text-muted); 
@@ -66,14 +65,14 @@ html, body {
   border-top: 1px solid var(--border-color);  
 }
 
-/* soft ambient lighting blur across viewports */
+/* Soft ambient lighting blur locked to the viewport to prevent expanding overflow scrollbars */
 body::before {
   content: "";
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 120%;
-  height: 120%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background: radial-gradient(circle at 50% 50%, rgba(0, 242, 254, 0.04), transparent 60%);
   pointer-events: none;
   z-index: -2;

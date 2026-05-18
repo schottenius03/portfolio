@@ -1,194 +1,192 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About me</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles/about_styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/about_styles.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
-    <!-- Header -->
-    <header class="header d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="index.html" class="brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Kailing Schottenius</span>
-        </a>
-        <ul class="nav nav-pills">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
-            <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-    </header>
+<body class="about-page-body">
 
-    <!-- About Me Section -->
-    <section class="about py-5" style="background-color: #eaf1fa;">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Picture -->
-                <div class="col-md-5 text-center text-md-start mb-4 mb-md-0">
-                    <img src="images/kailing-interests.png" alt="Kailing's hobbies" class="img-fluid rounded">
-                </div>
-                <div class="col-md-7 ps-md-5">
-                    <h2>About Me</h2>
-                    <p>
-                    I am a Swedish Software Developer currently based in Sydney and relocating to Europe in September 2026. 
-                    Driven by a lifelong fascination with building digital solutions, I am completing my Bachelor of IT with focus on Mobile App Development this August. 
-                    With a strong foundation in logic highlighted by a first place win in a schoolwide mathematics competition and a background in media technology, I thrive at the intersection of technical precision and creative problem solving.
-                    </p>
-                    <p>
-                    I approach coding with the same mindset as my favorite handcrafts embroidery, knitting, and crocheting. 
-                    These hobbies have instilled in me a deep sense of patience, a sharp eye for detail, and the discipline required to build complex structures one "stitch" at a time. 
-                    I believe that clean, maintainable code is a craft in itself.
-                    </p>
-                    <p>
-                    With a focus on mobile app development (React Native & Swift) and a curiosity for emerging tech, my goal is to create meaningful, functional experiences that are as thoughtful in their architecture as they are in their user interface.
-                    </p>
-                    <a href="files/kailing-schottenius-resume.pdf" target="_blank" class="btn btn-primary mt-2">View my CV</a>
-                </div>
-            </div>
+  <header class="header p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="brand text-decoration-none text-white fs-4"><span>Kailing Schottenius</span></a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+        <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="about-section py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center text-md-start mb-4 mb-md-0 profile-image-col">
+          <div class="profile-image-wrapper">
+            <img src="images/kailing-interests.png" alt="Kailing's hobbies" class="img-fluid rounded shadow-sm">
+          </div>
         </div>
-    </section>
-
-    <!-- Education & Certifications Section -->
-    <section class="education py-5">
-        <div class="container">
-            <h2 class="mb-4">Education and Certifications</h2>
-
-            <!-- Bachelor -->
-            <div class="edu-card row align-items-center mb-3 p-3 shadow-sm rounded">
-                <div class="col-auto text-center">
-                    <span class="edu-icon">🎓</span>
-                </div>
-                <div class="col">
-                    <h5>Bachelor in Mobile App Development</h5>
-                    <p class="mb-0">Academy of Interactive Technology, Sydney, Australia – 2023 – Present</p>
-                    <small>Specializing in mobile app development and web design projects.</small><br>
-                    <small><strong>Expected Graduation:</strong> August 2026</small>
-                </div>
-            </div>
-
-            <!-- Higher Education Diploma -->
-            <div class="edu-card row align-items-center mb-3 p-3 shadow-sm rounded bg-light">
-                <div class="col-auto text-center">
-                    <span class="edu-icon">🎓</span>
-                </div>
-                <div class="col">
-                    <h5>Higher Education Diploma in Information & Media Technology</h5>
-                    <p class="mb-0">Nacka Gymnasium, Stockholm, Sweden – 2023</p>
-                    <small>Studied programming fundamentals and media technology.</small>
-                </div>
-            </div>
-
-            <!-- AI Foundations Certificate -->
-            <div class="edu-card row align-items-center mb-3 p-3 shadow-sm rounded bg-light">
-                <div class="col-auto text-center">
-                    <a href="files/ai-foundations-certificate.pdf" target="_blank" rel="noopener noreferrer">
-                        <img src="images/ai-foundations-certificate.jpg" 
-                            alt="AI Foundations Badge" 
-                            class="hover-shadow-img">
-                    </a>
-                </div>
-                <div class="col">
-                    <h5>AI Foundations</h5>
-                    <p class="mb-0">Nexted – 2026</p>
-                    <small>Completed a foundational course in artificial intelligence, covering machine learning, AI tools, and data-driven problem solving.</small><br>
-                </div>
-            </div>
-
+        
+        <div class="col-md-7 ps-md-5 intro-text-col">
+          <h2 class="section-heading mb-4 text-center text-md-start">About Me</h2>
+          
+          <div class="intro-paragraphs">
+            <p>
+              I am a Swedish Software Developer currently based in Sydney and relocating to Europe in September 2026. 
+              Driven by a lifelong fascination with building digital solutions, I am completing my Bachelor of IT with focus on Mobile App Development this August. 
+              With a strong foundation in logic highlighted by a first place win in a schoolwide mathematics competition and a background in media technology, I thrive at the intersection of technical precision and creative problem solving.
+            </p>
+            <p>
+              I approach coding with the same mindset as my favorite handcrafts embroidery, knitting, and crocheting. 
+              These hobbies have instilled in me a deep sense of patience, a sharp eye for detail, and the discipline required to build complex structures one "stitch" at a time. 
+              I believe that clean, maintainable code is a craft in itself.
+            </p>
+            <p>
+              With a focus on mobile app development (React Native & Swift) and a curiosity for emerging tech, my goal is to create meaningful, functional experiences that are as thoughtful in their architecture as they are in their user interface.
+            </p>
+          </div>
+          
+          <div class="text-center text-md-start mt-4">
+            <a href="files/kailing-schottenius-resume.pdf" target="_blank" class="btn btn-outline-primary px-4">View my CV</a>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <hr class="custom-hr">
+  <div class="container my-3">
+    <hr class="section-separator-hr">
+  </div>
 
-    <!-- Tech Stack Section -->
-    <section class="tech-stack py-5">
-        <div class="container">
-            <h2 class="mb-5 text-center">Tech Stack</h2>
-            <div class="row g-4 justify-content-center">
+  <section class="education-section py-3">
+    <div class="container">
+      <h2 class="section-heading mb-4">Education and Certifications</h2>
 
-            <!-- Front-End Card -->
-            <div class="col-12 col-md-2">
-                <div class="card h-100 shadow-sm text-center p-3">
-                    <h6 class="mb-3"><i class="fas fa-code me-1"></i>Front-End</h6>
-                    <p class="mb-1 text-dark"><i class="fab fa-css3-alt me-2"></i>CSS3</p>
-                    <p class="mb-1 text-dark"><i class="fab fa-html5 me-2"></i>HTML5</p>
-                    <p class="mb-1 text-dark"><i class="fab fa-js me-2"></i>JavaScript</p>
-                    <p class="mb-1 text-dark"><i class="fab fa-react me-2"></i>React Native</p>
-                </div>
-            </div>
-
-            <!-- Back-End Card -->
-            <div class="col-12 col-md-2">
-                <div class="card h-100 shadow-sm text-center p-3">
-                    <h6 class="mb-3"><i class="fas fa-server me-1"></i>Back-End</h6>
-                    <p class="mb-1 text-dark"><i class="fas fa-layer-group me-2"></i>ASP.NET</p>
-                    <p class="mb-1 text-dark"><i class="fas fa-terminal me-2"></i>C#</p>
-                    <p class="mb-1 text-dark"><i class="fas fa-file-code me-2"></i>C++</p>
-                    <p class="mb-1 text-dark"><i class="fas fa-flask me-2"></i>Flask</p>
-                    <p class="mb-1 text-dark"><i class="fas fa-database me-2"></i>MS SQL Server</p>
-                    <p class="mb-1 text-dark"><i class="fab fa-python me-2"></i>Python</p>
-                </div>
-            </div>
-
-                <!-- Mobile -->
-                <div class="col-12 col-md-2">
-                    <div class="card h-100 shadow-sm text-center p-3">
-                        <h6 class="mb-3"><i class="fas fa-mobile-alt me-1"></i>Mobile Dev</h6>
-                        <p class="mb-1 text-dark"><i class="fab fa-java me-2"></i>Java</p>
-                        <p class="mb-1 text-dark"><i class="fab fa-android me-2"></i>Kotlin</p>
-                        <p class="mb-1 text-dark"><i class="fab fa-react me-2"></i>React Native</p>
-                        <p class="mb-1 text-dark"><i class="fab fa-apple me-2"></i>Swift</p>
-                        <p class="mb-1 text-dark"><i class="fas fa-code me-2"></i>TypeScript</p>
-                        <hr class="opacity-50">
-                        <p class="text-secondary small mb-0">AsyncStorage, Firebase, SQLite</p>
-                    </div>
-                </div>
-
-                <!-- DevOps -->
-                <div class="col-12 col-md-2">
-                    <div class="card h-100 shadow-sm text-center p-3">
-                        <h6 class="mb-3"><i class="fas fa-tools me-1"></i>DevOps</h6>
-                        <p class="mb-1 text-dark"><i class="fas fa-sync-alt me-2"></i>Agile / Scrum</p>
-                        <p class="mb-1 text-dark"><i class="fab fa-git-alt me-2"></i>Git</p>
-                        <p class="mb-1 text-dark"><i class="fab fa-github me-2"></i>GitHub</p>
-                        <p class="mb-1 text-dark"><i class="fas fa-tools me-2"></i>Gradle</p>
-                        <p class="mb-1 text-dark"><i class="fab fa-trello me-2"></i>Trello</p>
-                    </div>
-                </div>
-
-                <!-- Other -->
-                <div class="col-12 col-md-2">
-                    <div class="card h-100 shadow-sm text-center p-3">
-                        <h6 class="mb-3"><i class="fas fa-layer-group me-1"></i>Design & Tools</h6>
-                        <span><i class="fas fa-laptop-code me-1"></i>Android Studio</span>
-                        <span><i class="fas fa-palette me-1"></i>Canva</span>
-                        <span><i class="fab fa-figma me-1"></i>Figma</span>
-                        <span><i class="fas fa-desktop me-1"></i>Visual Studio</span>
-                        <span><i class="fas fa-code me-1"></i>VS Code</span>
-                        <span><i class="fas fa-apple me-1"></i>Xcode</span>
-                    </div>
-                </div>
-
-            </div>
+      <div class="education-cards-wrapper">
+        <div class="edu-card d-flex align-items-center p-4 mb-4 rounded shadow-sm">
+          <div class="edu-icon-container text-center me-4">
+            <span class="edu-icon">🎓</span>
+          </div>
+          <div class="edu-details flex-grow-1">
+            <h5 class="fw-bold mb-2">Bachelor in Mobile App Development</h5>
+            <p class="mb-1 subtitle-text">Academy of Interactive Technology, Sydney, Australia – Present</p>
+            <small class="d-block card-desc-text">Specializing in mobile app development and web design projects.</small>
+            <small class="d-block card-desc-text mt-1"><strong>Expected Graduation:</strong> August 2026</small>
+          </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer mt-auto text-center py-3 border-top">
-        © 2026
-    </footer>
+        <div class="edu-card d-flex align-items-center p-4 mb-4 rounded shadow-sm">
+          <div class="edu-icon-container text-center me-4">
+            <span class="edu-icon">🎓</span>
+          </div>
+          <div class="edu-details flex-grow-1">
+            <h5 class="fw-bold mb-2">Higher Education Diploma in Information & Media Technology</h5>
+            <p class="mb-1 subtitle-text">Nacka Gymnasium, Stockholm, Sweden – 2023</p>
+            <small class="d-block card-desc-text">Studied programming fundamentals and media technology.</small>
+          </div>
+        </div>
 
-    <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <div class="edu-card d-flex align-items-center p-4 rounded shadow-sm">
+          <div class="edu-icon-container text-center me-4">
+            <a href="files/ai-foundations-certificate.pdf" target="_blank" rel="noopener noreferrer" class="edu-cert-link">
+              <span class="edu-icon">📜</span>
+            </a>
+          </div>
+          <div class="edu-details flex-grow-1">
+            <h5 class="fw-bold mb-2">AI Foundations</h5>
+            <p class="mb-1 subtitle-text">Nexted – 2026</p>
+            <small class="d-block card-desc-text">Completed a foundational course in artificial intelligence, covering machine learning, AI tools, and data-driven problem solving.</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="container my-4">
+    <hr class="section-separator-hr">
+  </div>
+
+  <section class="tech-stack-section py-4">
+    <div class="container">
+      <h2 class="section-heading mb-5 text-center">Tech Stack</h2>
+      <div class="row g-4 justify-content-center tech-stack-grid">
+
+        <div class="col-6 col-sm-4 col-lg-2 tech-card-col">
+          <div class="tech-card h-100 p-3 shadow-sm rounded">
+            <h6 class="mb-3 fw-bold text-center"><i class="fas fa-code me-2"></i>Front-End</h6>
+            <p class="mb-1"><i class="fab fa-css3-alt me-2"></i>CSS3</p>
+            <p class="mb-1"><i class="fab fa-html5 me-2"></i>HTML5</p>
+            <p class="mb-1"><i class="fab fa-js me-2"></i>JavaScript</p>
+            <p class="mb-1"><i class="fab fa-react me-2"></i>React Native</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2 tech-card-col">
+          <div class="tech-card h-100 p-3 shadow-sm rounded">
+            <h6 class="mb-3 fw-bold text-center"><i class="fas fa-server me-2"></i>Back-End</h6>
+            <p class="mb-1"><i class="fas fa-layer-group me-2"></i>ASP.NET</p>
+            <p class="mb-1"><i class="fas fa-terminal me-2"></i>C#</p>
+            <p class="mb-1"><i class="fas fa-file-code me-2"></i>C++</p>
+            <p class="mb-1"><i class="fas fa-flask me-2"></i>Flask</p>
+            <p class="mb-1"><i class="fas fa-database me-2"></i>MS SQL</p>
+            <p class="mb-1"><i class="fab fa-python me-2"></i>Python</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2 tech-card-col">
+          <div class="tech-card h-100 p-3 shadow-sm rounded">
+            <h6 class="mb-3 fw-bold text-center"><i class="fas fa-mobile-alt me-2"></i>Mobile Dev</h6>
+            <p class="mb-1"><i class="fab fa-java me-2"></i>Java</p>
+            <p class="mb-1"><i class="fab fa-android me-2"></i>Kotlin</p>
+            <p class="mb-1"><i class="fab fa-react me-2"></i>React Native</p>
+            <p class="mb-1"><i class="fab fa-apple me-2"></i>Swift</p>
+            <p class="mb-1"><i class="fas fa-code me-2"></i>TypeScript</p>
+            <hr class="my-2 tech-card-hr">
+            <p class="small footer-note-text text-center mb-0">AsyncStorage, Firebase, SQLite</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2 tech-card-col">
+          <div class="tech-card h-100 p-3 shadow-sm rounded">
+            <h6 class="mb-3 fw-bold text-center"><i class="fas fa-tools me-2"></i>DevOps</h6>
+            <p class="mb-1"><i class="fas fa-sync-alt me-2"></i>Agile</p>
+            <p class="mb-1"><i class="fab fa-git-alt me-2"></i>Git</p>
+            <p class="mb-1"><i class="fab fa-github me-2"></i>GitHub</p>
+            <p class="mb-1"><i class="fas fa-tools me-2"></i>Gradle</p>
+            <p class="mb-1"><i class="fab fa-trello me-2"></i>Trello</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-sm-4 col-lg-2 tech-card-col">
+          <div class="tech-card h-100 p-3 shadow-sm rounded">
+            <h6 class="mb-3 fw-bold text-center"><i class="fas fa-layer-group me-2"></i>Design & Tools</h6>
+            <p class="mb-1"><i class="fas fa-laptop-code me-2"></i>Studio</p>
+            <p class="mb-1"><i class="fas fa-palette me-2"></i>Canva</p>
+            <p class="mb-1"><i class="fab fa-figma me-2"></i>Figma</p>
+            <p class="mb-1"><i class="fas fa-desktop me-2"></i>VS</p>
+            <p class="mb-1"><i class="fas fa-code me-2"></i>VS Code</p>
+            <p class="mb-1"><i class="fas fa-apple me-2"></i>Xcode</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-3">
+    <div class="container">
+      <p class="mb-0">&copy; 2026</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
