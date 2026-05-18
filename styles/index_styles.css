@@ -1,17 +1,17 @@
-/* Local viewport height lock to prevent double scrollbars on the landing page */
+/* Base viewport configuration to prevent page bouncing and double scrollbars */
 html, body {
   height: 100vh !important;
   min-height: 100vh !important;
   overflow: hidden !important;
 }
 
-/* Coordinate anchors for cursor targeting tracking */
+/* Coordinate fallback values for cursor tracking system */
 html, body {
   --target-x: 50vw;
   --target-y: 50vh;
 }
 
-/* Full viewport landing layout alignment dimensions */
+/* Fullscreen hero layout wrapper */
 .hero-section {
   display: flex;
   align-items: center;    
@@ -24,7 +24,7 @@ html, body {
   overflow: hidden !important;
 }
 
-/* Main text element formatting boundaries */
+/* Text box opacity control and text shadowing */
 .hero-text {
   transition: opacity 0.4s ease;
   z-index: 2;
@@ -39,7 +39,7 @@ html, body {
   color: var(--text-muted);
 }
 
-/* Action trigger elements standard configurations */
+/* Gradient primary button with smooth hover transition */
 .btn-primary {
   background: linear-gradient(135deg, var(--accent-blue), #00c6ff);
   border: none;
@@ -54,6 +54,7 @@ html, body {
   box-shadow: 0 6px 20px rgba(0, 242, 254, 0.5);
 }
 
+/* Outline button using accent cyan color properties */
 .btn-outline-primary {
   border: 2px solid var(--accent-cyan);
   color: var(--accent-cyan);
@@ -69,17 +70,17 @@ html, body {
   transform: translateY(-2px);
 }
 
-/* Tracking layout bounding wrappers */
+/* Relative parent layout wrapper for layout anchors */
 .hero-image-wrapper {
   position: relative;
   display: inline-block;
 }
 
-/* Main static avatar geometry values */
+/* Circular landing image profile node definitions */
 .hero-image img {
   max-width: 300px;
   border-radius: 50%;
-  border: 6px solid var(--accent-cyan); 
+  border: 2px solid var(--accent-cyan);
   cursor: pointer;
   z-index: 105; 
   position: relative;
@@ -90,20 +91,21 @@ html, body {
   transform: scale(1.03);
 }
 
-/* Dim profile visibility rules during vehicle searching phase */
-body.spotlight-active .hero-image img {
+/* Dim profile image opacity rules while spotlight search path executes */
+body.spotlight-active .hero-image img,
+body.spotlight-shockwave .hero-image img {
   border-color: rgba(0, 242, 254, 0.15);
   filter: contrast(0.7) brightness(0.4);
 }
 
-/* Snap rendering values back onto target lock illumination state */
+/* Restore base sharpness metrics when avatar focus is locked */
 body.spotlight-expand .hero-image img {
   border-color: var(--accent-cyan);
   filter: contrast(1) brightness(1);
   transition: border-color 0.2s ease, filter 0.2s ease;
 }
 
-/* Interactive text bubble elements indicator setups */
+/* Pulsing text indicator layout configurations */
 .badge-pointer {
   position: absolute;
   top: -30px;
@@ -117,6 +119,7 @@ body.spotlight-expand .hero-image img {
   transition: opacity 0.3s ease;
 }
 
+/* Monospace layout values wrapping the badge string */
 .badge-text {
   font-family: monospace;
   font-size: 1.05rem;
@@ -131,6 +134,7 @@ body.spotlight-expand .hero-image img {
   filter: drop-shadow(0 0 5px rgba(0, 242, 254, 0.4));
 }
 
+/* Directional arrow mapping neon filter glows */
 .arrow-svg {
   width: 50px;
   height: 50px;
@@ -139,6 +143,7 @@ body.spotlight-expand .hero-image img {
   filter: drop-shadow(0 0 5px rgba(0, 242, 254, 0.6));
 }
 
+/* Keyframes controlling layout visibility and scale rhythms */
 @keyframes pulseGlow {
   0%, 100% {
     opacity: 0.5;
@@ -151,16 +156,19 @@ body.spotlight-expand .hero-image img {
   }
 }
 
+/* Turn off looping pulse when background search is active */
 .badge-pointer.spotlight-active {
   animation: none !important;
 }
 
+/* Hide navigation tooltips during transition frames */
 body.spotlight-active .badge-pointer,
+body.spotlight-shockwave .badge-pointer,
 body.spotlight-expand .badge-pointer {
   opacity: 0;
 }
 
-/* Fullscreen dimmer canvas properties configuration */
+/* Transparent black mask covering standard page elements */
 .spotlight-overlay {
   position: fixed;
   top: 0;
@@ -173,6 +181,7 @@ body.spotlight-expand .badge-pointer {
   display: none;
 }
 
+/* Mask cutout overlay forming the focus gradient circle */
 .spotlight-overlay::before {
   content: '';
   position: absolute;
@@ -181,11 +190,11 @@ body.spotlight-expand .badge-pointer {
   border-radius: 50%;
   background: radial-gradient(circle, rgba(11, 15, 25, 0) 0%, rgba(11, 15, 25, 0) 55%, rgba(0, 242, 254, 0.25) 75%, transparent 100%);
   transform: translate(-50%, -50%);
-  top: 0;
-  left: 0;
+  left: -7vw; 
+  top: 30vh; 
 }
 
-/* Persistent expanding waveform element styling profile templates */
+/* Expanding wave particle properties updating profile locks */
 .shockwave-ring {
   position: absolute;
   border-radius: 50%;
@@ -200,14 +209,19 @@ body.spotlight-expand .badge-pointer {
   animation: continuousShockwave 1.2s cubic-bezier(0.15, 0.7, 0.4, 1) forwards;
 }
 
-body.spotlight-active .spotlight-overlay {
+/* Activate container block render behaviors */
+body.spotlight-active .spotlight-overlay,
+body.spotlight-shockwave .spotlight-overlay,
+body.spotlight-expand .spotlight-overlay {
   display: block;
 }
 
+/* Trigger automated sequence path sweeping across screen fields */
 body.spotlight-active .spotlight-overlay::before {
   animation: smoothVehicleSweep 5.5s ease-in-out forwards;
 }
 
+/* Flight trajectory values tracking spotlight search motion elements */
 @keyframes smoothVehicleSweep {
   0% { left: -5vw; top: 30vh; }
   18% { left: 120px; top: 68vh; }
@@ -218,10 +232,7 @@ body.spotlight-active .spotlight-overlay::before {
   100% { left: var(--target-x); top: var(--target-y); }
 }
 
-body.spotlight-expand .spotlight-overlay {
-  display: block;
-}
-
+/* Scale target focus radius sizes once identity tracking confirms */
 body.spotlight-expand .spotlight-overlay::before {
   left: var(--target-x);
   top: var(--target-y);
@@ -231,6 +242,7 @@ body.spotlight-expand .spotlight-overlay::before {
   transition: width 0.4s ease-out, height 0.4s ease-out;
 }
 
+/* Keyframes setting opacity degradation tracks on radial waves */
 @keyframes continuousShockwave {
   0% {
     width: 0px;
@@ -245,4 +257,63 @@ body.spotlight-expand .spotlight-overlay::before {
     height: 340px;
     opacity: 0;
   }
+}
+
+/* Disable image scale hover effect while the flash animation is active */
+body.spotlight-active .hero-image img:hover,
+body.spotlight-shockwave .hero-image img:hover,
+body.spotlight-expand .hero-image img:hover {
+  transform: none !important;
+  cursor: default !important;
+}
+
+/* Maintain primary button gradient and shadow during active tracking states */
+body.spotlight-active .btn-primary:hover,
+body.spotlight-shockwave .btn-primary:hover,
+body.spotlight-expand .btn-primary:hover {
+  background: linear-gradient(135deg, var(--accent-blue), #00c6ff) !important;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.3) !important;
+  transform: none !important;
+  cursor: default !important;
+}
+
+/* Lock outline button borders and transparency frames on target lock */
+body.spotlight-active .btn-outline-primary:hover,
+body.spotlight-shockwave .btn-outline-primary:hover,
+body.spotlight-expand .btn-outline-primary:hover {
+  background: transparent !important;
+  border-color: var(--accent-cyan) !important;
+  color: var(--accent-cyan) !important;
+  transform: none !important;
+  box-shadow: none !important;
+  cursor: default !important;
+}
+
+/* Turn off color changes on header links while animation runs */
+body.spotlight-active .header .nav-pills .nav-link:not(.active):hover,
+body.spotlight-shockwave .header .nav-pills .nav-link:not(.active):hover,
+body.spotlight-expand .header .nav-pills .nav-link:not(.active):hover {
+  background-color: transparent !important;
+  color: var(--text-muted, #a0aec0) !important;
+  transform: none !important;
+  cursor: default !important;
+}
+
+/* Keep active navigation pill backgrounds fixed during spotlight transitions */
+body.spotlight-active .header .nav-pills .nav-link.active:hover,
+body.spotlight-shockwave .header .nav-pills .nav-link.active:hover,
+body.spotlight-expand .header .nav-pills .nav-link.active:hover {
+  background-color: var(--bs-nav-pills-link-active-bg, #0d6efd) !important;
+  color: #fff !important;
+  transform: none !important;
+  cursor: default !important;
+}
+
+/* Freeze brand logo interaction behaviors under spotlight active phase */
+body.spotlight-active .header .brand:hover,
+body.spotlight-shockwave .header .brand:hover,
+body.spotlight-expand .header .brand:hover {
+  color: #fff !important;
+  transform: none !important;
+  cursor: default !important;
 }

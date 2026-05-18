@@ -10,44 +10,57 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault();
       const targetUrl = avatarLink.getAttribute('href');
       
+      /* Calculate coordinate centers for the profile avatar node */
       const rect = avatar.getBoundingClientRect();
       const centerX = rect.left + rect.width / 2;
       const centerY = rect.top + rect.height / 2;
       
+      /* Inject dynamic tracking variables into global CSS context */
       body.style.setProperty('--target-x', centerX + 'px');
       body.style.setProperty('--target-y', centerY + 'px');
       
-      /* freeze badge text movement loop immediately on click event */
+      /* Freeze active badge pointer animation states immediately */
       if (badgePointer) {
         badgePointer.classList.add('spotlight-active');
       }
       
-      /* trigger active camera tracking state sequence */
+      /* Initiate the automated screen sweep sequence (runs for 5.5s) */
       body.classList.add('spotlight-active');
       
-      /* trigger endpoint lock and spotlight expansion after target arrival */
+      /* Trigger sequence transition once primary sweep concludes at 5.5s */
       setTimeout(() => {
         body.classList.remove('spotlight-active');
-        body.classList.add('spotlight-expand');
+        body.classList.add('spotlight-shockwave');
         
-        /* helper function to construct and inject a single shockwave instance */
+        /* Generator function creating expanding wave particle nodes */
         const createRing = () => {
           const ring = document.createElement('div');
           ring.classList.add('shockwave-ring');
           overlay.appendChild(ring);
           
-          /* Ökad livslängd till 1500ms så ringen hinner tona ut snyggt i den nya långsammare takten */
+          /* Garbage collection tracking to clear stale DOM particles */
           setTimeout(() => {
             ring.remove();
           }, 1500);
         };
 
-        /* Skapar en ny ring var 750:e millisekund (0.75 sek) helt synkroniserat */
+        /* Fire the initial shockwave particle immediately */
+        createRing();
+        
+        /* Establish continuous loop intervals for successive wave particles */
         setInterval(createRing, 750);
+
+        /* VISUAL SYNC FIX: 
+          As the first wave expands past the avatar boundaries at 300ms, 
+          instantly illuminate and lock the permanent target focus mask.
+        */
+        setTimeout(() => {
+          body.classList.add('spotlight-expand');
+        }, 300);
         
       }, 5500);
 
-      /* process view redirect routing once cinematic expansion and shockwave complete */
+      /* Redirect execution context to target URL when full sequence ends */
       setTimeout(() => {
         window.location.href = targetUrl;
       }, 7500);
