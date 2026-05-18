@@ -54,9 +54,7 @@ h2, h5 {
   font-weight: 700;
 }
 
-/* ==========================================================================
-   SPLIT LAYOUT ARCHITECTURE (Keeps content side-by-side on wide screens)
-   ========================================================================== */
+/* Split layout */
 .split-layout-container {
   display: flex;
   flex-direction: column;
@@ -142,7 +140,7 @@ h2, h5 {
   min-width: 50px;
 }
 
-/* BALANCED ICON SIZE (REDUCED FROM 3.5rem) */
+/* Balanced icons size */
 .edu-icon {
   font-size: 1.8rem !important; 
   display: inline-block;
