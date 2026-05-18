@@ -1,59 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My Projects</title>
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/projects_style.css">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <!-- Header -->
-    <header class="header d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-        <a href="index.html" class="brand d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" aria-hidden="true">
-                <use xlink:href="#bootstrap"></use>
-            </svg>
-            <span class="fs-4">Kailing Schottenius</span>
-        </a>
+
+      <header class="header p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+        <a href="index.html" class="brand text-decoration-none text-white fs-4"><span>Kailing Schottenius</span></a>
         <ul class="nav nav-pills">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
             <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
+        </div>
     </header>
 
-    <!-- My Projects Jumbotron -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center mt-5">
         <div class="container">
             <h1 class="jumbotron-heading">My Projects</h1>
-            <p class="lead text-muted mb-4">Here are some of the projects I have built during my studies and personal work.</p>
+            <p class="lead mb-4">Here are some of the projects I have built during my studies and personal work.</p>
         </div>
     </section>
 
-    <!-- Album Section -->
-    <div class="album py-5" style="background-color: #ffffff;">
+    <div class="album py-5">
         <div class="container">
 
-            <!-- Row with Bootstrap gutters -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-4">
 
-                <!-- Project Card 1 -->
                 <div class="col">
                     <a href="static/task_master.html" class="text-decoration-none">
                         <div class="card box-shadow hover-shadow">
                             <div class="project-image-container">
-                                <img class="image-mobile-app" src="images/taskmaster.png" alt="Expo todo app screens">
+                                <img class="image-mobile-app" src="images/taskmaster.jpg" alt="Expo todo app screens">
                             </div>
                         <div class="card-body">
                             <h5>TaskMaster</h5>
                             <p class="card-text">A cross-platform productivity application built with React Native and TypeScript. 
                                 The project focuses on modern software engineering principles, ensuring a consistent UX across iOS and Android while leveraging native device features for optimal performance.</p>
-                            <!-- Tech Bubbles for Simple App -->
                             <div class="tech-bubbles d-flex flex-wrap gap-2">
                                 <span class="bubble">React Native</span>
                                 <span class="bubble">TypeScript</span>
@@ -70,12 +62,11 @@
                     </a>
                 </div>
 
-                <!-- Project Card 2 -->
                 <div class="col">
                     <a href="static/just_a_sec.html" class="text-decoration-none">
                         <div class="card box-shadow hover-shadow">
                             <div class="project-image-container">
-                                <img class="image-mobile-app" src="images/clock.png" alt="IOS clock app screens">
+                                <img class="image-mobile-app" src="images/clock.jpg" alt="IOS clock app screens">
                             </div>
                             <div class="card-body">
                                 <h5>Just A Sec</h5>
@@ -97,12 +88,11 @@
                     </a>
                 </div>
 
-                <!-- Project Card 3 -->
                 <div class="col">
-                    <a href="static/carftrunner.html" class="text-decoration-none">
+                    <a href="static/craftrunner.html" class="text-decoration-none">
                         <div class="card box-shadow hover-shadow">
                         <div class="project-image-container">
-                            <img class="image-mobile-app" src="images/craftrunner1.png" alt="alt text">
+                            <img class="image-mobile-app" src="images/craftrunner1.jpg" alt="alt text">
                         </div>
                         <div class="card-body">
                             <h5>CraftRunner</h5>
@@ -126,16 +116,14 @@
 
             </div>
 
-            <!-- Row with Bootstrap gutters -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-4">
 
-                <!-- Project Card 4 -->
                 <div class="col">
-                    <a href="static/atir_connect.html" class="text-decoration-none">
+                    <a href="static/atir_research.html" class="text-decoration-none">
                         <div class="card box-shadow hover-shadow">
                         <img class="card-img-top" src="images/research1.png" alt="alt text">
                         <div class="card-body">
-                            <h5>AITR Connect</h5>
+                            <h5>AITR Research</h5>
                             <p class="card-text">A web-based system focused on data-driven logic to automate market research workflows. 
                                 The project implements dynamic data collection and complex search algorithms to efficiently filter and manage large datasets from a centralized database.</p>
                             <div class="tech-bubbles d-flex flex-wrap gap-2">
@@ -153,11 +141,10 @@
                     </a>
                 </div>
 
-                <!-- Project Card 5 -->
-                <div class="col">
+               <div class="col">
                     <a href="static/ait_library.html" class="text-decoration-none">
                         <div class="card box-shadow hover-shadow">
-                        <img class="card-img-top" src="images/library-cover.png" alt="alt text">
+                        <img class="card-img-top zoom-library-img" src="images/library-cover.jpg" alt="alt text">
                         <div class="card-body">
                             <h5>AIT Library</h5>
                             <p class="card-text">An enterprise-level management system developed using C# and the .NET framework. 
@@ -178,8 +165,7 @@
                     </a>
                 </div>
 
-                 <!-- Project Card 6 -->
-                <div class="col">
+                 <div class="col">
                     <a href="static/ait_atm.html" class="text-decoration-none">
                         <div class="card box-shadow hover-shadow">
                         <img class="card-img-top" src="images/atm3.png" alt="alt text">
@@ -206,10 +192,8 @@
 
             </div>
 
-            <!-- Row with Bootstrap gutters -->
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-4">
 
-                <!-- Project Card 7 -->
                 <div class="col">
                     <a href="static/hangman.html" class="text-decoration-none">
                         <div class="card box-shadow hover-shadow">
@@ -234,7 +218,6 @@
                     </a>
                 </div>
 
-                <!-- Project Card 8 -->
                 <div class="col">
                     <a href="static/pawdience.html" class="text-decoration-none">
                         <div class="card box-shadow hover-shadow">
@@ -264,12 +247,10 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer mt-auto text-center">
         © 2026
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

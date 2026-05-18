@@ -1,0 +1,99 @@
+/* Navigation breadcrumb link back to gallery */
+.back-link {
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #a0aec0 !important;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Hover state for the return link turning into solid white */
+.back-link:hover {
+    color: #ffffff !important;
+    transform: translateX(-3px);
+}
+
+/* Forces text underline specifically on hover for the text span only */
+.back-link:hover .back-text {
+    text-decoration: underline !important;
+}
+
+/* Main project presentation wrapper card */
+.project-overview, .tech-used, .github-card {
+    border-radius: 8px;
+    background-color: var(--bg-card-blue) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+/* Dimming effect for the main project presentation image */
+.project-overview img {
+    filter: brightness(0.75);
+    transition: filter 0.3s ease;
+}
+
+/* Brightens the project image slightly on hover */
+.project-overview:hover img {
+    filter: brightness(0.9);
+}
+
+/* Individual functionality checklist cards */
+.feature-card {
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 8px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Lift and glow animation for feature blocks */
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 242, 254, 0.1);
+}
+
+/* Visual confirmation checkmark accent coloring */
+.feature-bock {
+    color: var(--accent-cyan) !important;
+    font-size: 1.2rem;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+/* Horizontal spacing rules for tech stack components */
+.tech-item {
+    display: flex;
+    align-items: center;
+    color: var(--text-main) !important;
+}
+
+/* Code repository showcase link block execution */
+.github-card a.github-link {
+    text-decoration: none;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Hover text interaction for code link references keeping the color identical */
+.github-card a.github-link:hover .repo-text {
+    text-decoration: underline !important;
+}
+
+/* Shared structural utility clearing list defaults */
+.list-unstyled {
+    padding-left: 0;
+    margin: 0;
+}
