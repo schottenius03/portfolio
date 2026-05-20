@@ -1,8 +1,9 @@
 /* Base viewport configuration to prevent page bouncing and double scrollbars */
 html, body {
-  height: 100vh !important;
-  min-height: 100vh !important;
-  overflow: hidden !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Coordinate fallback values for cursor tracking system */
@@ -11,17 +12,40 @@ html, body {
   --target-y: 50vh;
 }
 
+@media (min-width: 768px) {
+  html, body {
+    height: 100vh !important;
+    overflow: hidden !important;
+  }
+}
+
 /* Fullscreen hero layout wrapper */
 .hero-section {
   display: flex;
   align-items: center;    
   justify-content: center;  
-  padding: 20px;
+  padding: 1.5rem;
   background-color: transparent; 
   color: var(--text-main);
-  height: calc(100vh - 72px);
   position: relative;
-  overflow: hidden !important;
+  flex-grow: 1;
+  min-height: calc(100vh - 72px);
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    height: auto !important;
+    overflow: visible !important;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    height: calc(100vh - 72px);
+    overflow: hidden !important;
+  }
 }
 
 /* Text box opacity control and text shadowing */
@@ -291,29 +315,4 @@ body.spotlight-expand .btn-outline-primary:hover {
 
 /* Turn off color changes on header links while animation runs */
 body.spotlight-active .header .nav-pills .nav-link:not(.active):hover,
-body.spotlight-shockwave .header .nav-pills .nav-link:not(.active):hover,
-body.spotlight-expand .header .nav-pills .nav-link:not(.active):hover {
-  background-color: transparent !important;
-  color: var(--text-muted, #a0aec0) !important;
-  transform: none !important;
-  cursor: default !important;
-}
-
-/* Keep active navigation pill backgrounds fixed during spotlight transitions */
-body.spotlight-active .header .nav-pills .nav-link.active:hover,
-body.spotlight-shockwave .header .nav-pills .nav-link.active:hover,
-body.spotlight-expand .header .nav-pills .nav-link.active:hover {
-  background-color: var(--bs-nav-pills-link-active-bg, #0d6efd) !important;
-  color: #fff !important;
-  transform: none !important;
-  cursor: default !important;
-}
-
-/* Freeze brand logo interaction behaviors under spotlight active phase */
-body.spotlight-active .header .brand:hover,
-body.spotlight-shockwave .header .brand:hover,
-body.spotlight-expand .header .brand:hover {
-  color: #fff !important;
-  transform: none !important;
-  cursor: default !important;
-}
+body.spotlight-shockwave .header .nav-p
