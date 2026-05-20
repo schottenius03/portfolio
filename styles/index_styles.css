@@ -315,4 +315,38 @@ body.spotlight-expand .btn-outline-primary:hover {
 
 /* Turn off color changes on header links while animation runs */
 body.spotlight-active .header .nav-pills .nav-link:not(.active):hover,
-body.spotlight-shockwave .header .nav-p
+body.spotlight-shockwave .header .nav-pills .nav-link:not(.active):hover,
+body.spotlight-expand .header .nav-pills .nav-link:not(.active):hover {
+  color: var(--text-muted) !important;
+  background: transparent !important;
+  cursor: default !important;
+}
+
+/* Mobile optimization for Get to know me badge and arrow */
+@media (max-width: 767px) {
+  .badge-pointer {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .badge-text {
+    white-space: nowrap;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .arrow-svg {
+    transform: rotate(0deg);
+    margin: 0;
+    height: 40px;
+    width: 40px;
+  }
+}
