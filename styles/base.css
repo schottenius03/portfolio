@@ -77,3 +77,9 @@ body::before {
   pointer-events: none;
   z-index: -2;
 }
+
+/* Hover effect for Visit Live Site link */
+.hover-blue:hover {
+  color: var(--accent-cyan) !important;
+  transition: color 0.2s ease;
+}

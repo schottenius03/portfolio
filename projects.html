@@ -8,8 +8,18 @@
     <title>My Projects</title>
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/projects_style.css">
+    <style>
+        .custom-link {
+            color: #ffffff;
+            transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+            opacity: 0.9;
+        }
+        .custom-link:hover {
+            color: #38bdf8; /* Ljusblå ton vid hover, eller behåll helt vit med opacity: 1 om du föredrar det */
+            opacity: 1;
+        }
+    </style>
 </head>
-
 <body class="d-flex flex-column min-vh-100">
 
       <header class="header p-3">
@@ -33,6 +43,59 @@
 
     <div class="album py-5">
         <div class="container">
+
+            <!-- KitScope Featured Banner -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card box-shadow hover-shadow position-relative">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-lg-7">
+                                <div class="card-body p-4 p-md-5">
+                                    <div class="d-flex align-items-center gap-2 mb-2">
+                                        <span class="bubble">Live Platform</span>
+                                    </div>
+                                    
+                                    <!-- KitScope Title with link to project details -->
+                                    <h3 class="mb-3">
+                                        <a href="static/kitscope.html" class="text-white text-decoration-none stretched-link">KitScope</a>
+                                    </h3>
+                                    
+                                    <p class="card-text text-light mb-4">A central library and discovery platform for cross stitch patterns. Search through specific designs, explore stitched versions from other makers, and keep track of their own active projects and queue.</p>
+                                    
+                                    <div class="tech-bubbles d-flex flex-wrap gap-2 mb-4">
+                                        <span class="bubble">Next.js</span>
+                                        <span class="bubble">React</span>
+                                        <span class="bubble">TypeScript</span>
+                                        <span class="bubble">Tailwind CSS</span>
+                                        <span class="bubble">Firebase</span>
+                                        <span class="bubble">Cloud Functions</span>
+                                        <span class="bubble">TanStack Query</span>
+                                    </div>
+
+                                    <!-- Visit live site link with higher z-index and blue hover effect -->
+                                    <div class="position-relative" style="z-index: 2;">
+                                        <a href="https://kitscope.com/" target="_blank" class="text-decoration-none text-white fw-semibold d-inline-flex align-items-center gap-2 hover-blue">
+                                            <span>Visit Live Site</span>
+                                            <i class="fas fa-external-link-alt"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project preview image linking to details page -->
+                            <div class="col-lg-5 p-4 text-center d-flex align-items-center justify-content-center">
+                                <a href="static/kitscope.html" class="w-100 position-relative" style="z-index: 2;">
+                                    <img class="img-fluid rounded shadow w-100" src="images/kitscope1.png" alt="KitScope live preview">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mb-4">
+                <h3 class="text-white fw-semibold">Other Projects</h3>
+            </div>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 mb-4">
 

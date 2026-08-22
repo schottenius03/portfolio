@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KitScope – Project Details</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/project_detail_styles.css">
+
+  <style>
+    #portfolioCarousel .carousel-control-prev,
+    #portfolioCarousel .carousel-control-next {
+      width: 10%;
+      opacity: 0.8;
+    }
+    #portfolioCarousel .carousel-control-prev-icon,
+    #portfolioCarousel .carousel-control-next-icon {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      padding: 20px;
+      background-size: 50%, 50%;
+    }
+    #portfolioCarousel .carousel-control-prev:hover,
+    #portfolioCarousel .carousel-control-next:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100 page-bg">
+
+  <!-- Header -->
+  <header class="header p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="../index.html" class="brand text-decoration-none text-white fs-4"><span>Kailing Schottenius</span></a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="../projects.html" class="nav-link active">Projects</a></li>
+        <li class="nav-item"><a href="../contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Back link -->
+  <div class="container mb-4">
+    <a href="../projects.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> 
+        <span class="back-text">Back to Projects</span>
+    </a>
+  </div>
+
+  <!-- Overview + Technologies row -->
+  <div class="container">
+    <div class="row g-4 mb-5">
+      <!-- Overview -->
+      <div class="col-md-8">
+        <div class="project-overview p-4 rounded shadow-sm">
+          <h2 class="fw-bold mb-3">Overview</h2>
+          <p>
+            KitScope is a web platform built to bring structure to the cross stitch community. It serves as a central library where makers can search for specific pattern designs, explore real stitched versions uploaded by other creators, and keep track of their own active projects and queue.
+          </p>
+
+          <!-- Slideshow / Carousel -->
+          <div id="portfolioCarousel" class="carousel slide my-3" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../images/kitscope1.png" class="d-block w-100 rounded" alt="KitScope Platform Landing Page">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/kitscope2.png" class="d-block w-100 rounded" alt="KitScope Brands Library">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/kitscope3.png" class="d-block w-100 rounded" alt="KitScope Community Discover Gallery">
+              </div>
+              <div class="carousel-item">
+                <img src="../images/kitscope4.png" class="d-block w-100 rounded" alt="KitScope User Profile and Projects">
+              </div>
+            </div>
+
+            <!-- Arrows right left -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- Key Features -->
+          <h4 class="mt-4 mb-3">Key Features</h4>
+          <div class="row g-3 mt-1 equal-height-features">
+            <div class="col-md-6 d-flex">
+              <div class="feature-card d-flex p-3 rounded mb-2">
+                <i class="fas fa-check feature-bock"></i>
+                <div>
+                  <h5 class="mb-1">Pattern Library</h5>
+                  <p class="mb-0">A growing database that brings together designers, brands, and patterns in one place.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex">
+              <div class="feature-card d-flex p-3 rounded mb-2">
+                <i class="fas fa-check feature-bock"></i>
+                <div>
+                  <h5 class="mb-1">Community Gallery</h5>
+                  <p class="mb-0">Search by pattern to explore real stitched versions and share your own WIPs and finishes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex">
+              <div class="feature-card d-flex p-3 rounded mb-2">
+                <i class="fas fa-check feature-bock"></i>
+                <div>
+                  <h5 class="mb-1">Project & Queue</h5>
+                  <p class="mb-0">Tools to help organize what you are currently stitching and what you want to start next.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex">
+              <div class="feature-card d-flex p-3 rounded mb-2">
+                <i class="fas fa-check feature-bock"></i>
+                <div>
+                  <h5 class="mb-1">Fast Search</h5>
+                  <p class="mb-0">A quick way to filter through designs and find specific patterns without hassle.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Takeaways & Challenges -->
+          <div class="mt-4">
+            <h4>Building & Takeaways</h4>
+            <p>
+              Building KitScope entirely from scratch gave me a deep, hands-on understanding of what it takes to bring a full-stack platform to life as a solo developer. 
+              Designing a scalable data structure to connect patterns, brands, and user collections required careful planning, especially when optimizing database indexes and queries in Firebase for smooth performance.
+            </p>
+            <p>
+              Beyond the core frontend and backend logic, working on this project taught me a lot about real-world deployment and maintenance. 
+              Setting up automated notification workflows for direct feedback, managing early access onboarding, and iterating based on real user input completely changed how I think about building applications that people actually use.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-4">
+        <!-- Technologies Used -->
+        <div class="tech-used p-4 rounded shadow-sm mb-3">
+          <h5 class="mb-3">Technologies Used</h5>
+          <ul class="list-unstyled">
+              <li class="tech-item mb-2"><i class="fas fa-code fa-lg text-info me-2"></i>Next.js (React)</li>
+              <li class="tech-item mb-2"><i class="fab fa-react fa-lg text-primary me-2"></i>React & TypeScript</li>
+              <li class="tech-item mb-2"><i class="fas fa-wind fa-lg text-info me-2"></i>Tailwind CSS</li>
+              <li class="tech-item mb-2"><i class="fas fa-fire fa-lg text-warning me-2"></i>Firebase & Cloud Functions</li>
+              <li class="tech-item mb-2"><i class="fas fa-database fa-lg text-success me-2"></i>TanStack Query</li>
+          </ul>
+        </div>
+
+        <!-- Live Platform Link Card -->
+        <div class="github-card p-4 rounded shadow-sm text-center">
+          <a href="https://kitscope.com/" target="_blank" class="btn btn-outline-info w-100 fw-bold d-flex align-items-center justify-content-center gap-2 py-2">
+            <i class="fas fa-external-link-alt"></i><span>Visit Live Platform</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto text-center py-3 border-top">
+      © 2026
+  </footer>
+
+</body>
+</html>
