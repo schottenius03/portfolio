@@ -151,6 +151,11 @@ h2, h5 {
 .edu-cert-link {
   text-decoration: none !important;
   display: inline-block;
+  cursor: pointer;
+}
+
+.edu-cert-link .edu-icon {
+  filter: drop-shadow(0 0 4px rgba(0, 242, 254, 0.5));
 }
 
 .edu-cert-link:hover .edu-icon {
